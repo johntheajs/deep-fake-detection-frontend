@@ -5,7 +5,7 @@ import { MdBatchPrediction } from "react-icons/md";
 const NavBar = () => {
   const navigate = useNavigate();
 
-  const navList = ["Predict", "About", "Contact"];
+  const navList = ["Predict", "Video", "About", "Contact"];
   const navListItems = navList.map((item, index) => (
     <li
       key={index}
@@ -22,6 +22,7 @@ const NavBar = () => {
 
   const handleMultipleClick = (index) => {
     if (index == 0) navigate("/predict");
+    if (index == 1) navigate("/predict/video");
   };
 
   return (
